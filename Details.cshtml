@@ -1,0 +1,25 @@
+﻿@model version3.Models.Customer
+
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div id="customer-details">
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>@Html.DisplayNameFor(model => model.CustomerId)</dt>
+        <dd data-bind="text: selectedCustomer.CustomerId"></dd>
+
+        <dt>@Html.DisplayNameFor(model => model.CustomerName)</dt>
+        <dd data-bind="text: selectedCustomer.CustomerName"></dd>
+
+        <dt>@Html.DisplayNameFor(model => model.CustomerAddress)</dt>
+        <dd data-bind="text: selectedCustomer.CustomerAddress"></dd>
+
+    </dl>
+</div>
